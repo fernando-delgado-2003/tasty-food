@@ -1,0 +1,132 @@
+@media (max-width: 810px) {
+    header {
+        transition: box-shadow 400ms linear;
+        position: fixed;
+
+    }
+
+    header.active {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+    }
+
+    .btn-menu {
+        display: block;
+        font-size: 1.8rem;
+    }
+
+    nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background: var(--color-body);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+        padding: 0;
+        transition: top 1s linear;
+    }
+
+    nav.active {
+        top: var(--height-header);
+    }
+
+    nav a {
+        font-weight: 400;
+        text-align: center;
+        display: block;
+        margin: 0;
+        padding: .5rem;
+        font-size: 1.2rem;
+        color: var(--black-ligth);
+    }
+}
+
+@media (max-width: 768px) {
+    #home>div h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .subtitle-section {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    #home>div,
+    #contact>div,
+    #about>div,
+    .app>div {
+
+        margin-right: 1.5rem;
+
+
+    }
+
+    #contact>div:first-child {
+        width: calc(55% -1.5rem);
+    }
+
+    #contact>div:last-child {
+        width: calc(45% - 1.5rem);
+    }
+
+    #services .services .card-service,
+    #menu .menu .card-menu {
+        width: calc(100% / 2 - 60px);
+        opacity: 0;
+        margin: 30px;
+    }
+
+    .app>div .links {
+        display: flex;
+        width: 100px;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    footer {
+        justify-content: center;
+    }
+
+    footer>div {
+        text-align: center;
+        width: calc(80% / 2 - 1rem);
+    }
+}
+
+@media(max-width: 600px) {
+
+    #home>div,
+    #contact>div,
+    #about>div,
+    .app>div {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    #home {
+        text-align: center;
+    }
+
+    #home>div h1 {
+        font-size: 2.7rem;
+    }
+
+    #services .services .card-service,
+    #menu .menu .card-menu {
+        width: 100%;
+
+        margin: 1rem 0;
+    }
+
+    footer>div {
+        width: 100%;
+    }
+}
